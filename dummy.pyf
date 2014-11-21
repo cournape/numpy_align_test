@@ -1,0 +1,13 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module _dummy ! in 
+    interface  ! in :_dummy
+        subroutine zfoo(workd,n)
+            double complex dimension(3 * n),depend(n),intent(inout) :: workd
+        end subroutine foo
+    end interface 
+end python module _dummy
+
+! This file was auto-generated with f2py (version:2_3198).
+! See http://cens.ioc.ee/projects/f2py2e/
